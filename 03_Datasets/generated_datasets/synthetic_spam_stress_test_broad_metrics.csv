@@ -1,0 +1,4 @@
+coarse_type,n_rows,accuracy,precision,recall,f1,specificity,false_positive_rate,false_negative_rate,avg_spam_probability,tn,fp,fn,tp
+legitimate,360,0.5889,0.0,0.0,0.0,0.5889,0.4111,0.0,0.4357,212,148,0,0
+phishing,180,0.9889,1.0,0.9889,0.9944,0.0,0.0,0.0111,0.8718,0,0,2,178
+spam,180,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.9983,0,0,0,180

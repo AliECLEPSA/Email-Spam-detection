@@ -1,0 +1,50 @@
+{
+  "seed": 20260413,
+  "threshold": 0.5,
+  "n_rows": 720,
+  "n_families": 12,
+  "overall_metrics": {
+    "accuracy": 0.7917,
+    "precision": 0.7075,
+    "recall": 0.9944,
+    "f1": 0.8268,
+    "specificity": 0.5889,
+    "false_positive_rate": 0.4111,
+    "false_negative_rate": 0.0056,
+    "tn": 212,
+    "fp": 148,
+    "fn": 2,
+    "tp": 358
+  },
+  "best_legit_family": "legit_internal_project",
+  "worst_legit_family": "legit_newsletter_marketing",
+  "best_spam_family": "spam_prize_lottery",
+  "worst_spam_family": "phishing_ceo_wire",
+  "classification_report": {
+    "0": {
+      "precision": 0.9906542056074766,
+      "recall": 0.5888888888888889,
+      "f1-score": 0.7386759581881533,
+      "support": 360.0
+    },
+    "1": {
+      "precision": 0.7075098814229249,
+      "recall": 0.9944444444444445,
+      "f1-score": 0.8267898383371824,
+      "support": 360.0
+    },
+    "accuracy": 0.7916666666666666,
+    "macro avg": {
+      "precision": 0.8490820435152008,
+      "recall": 0.7916666666666667,
+      "f1-score": 0.7827328982626679,
+      "support": 720.0
+    },
+    "weighted avg": {
+      "precision": 0.8490820435152008,
+      "recall": 0.7916666666666666,
+      "f1-score": 0.7827328982626679,
+      "support": 720.0
+    }
+  }
+}

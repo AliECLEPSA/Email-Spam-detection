@@ -1,0 +1,98 @@
+{
+  "dataset": "email_dataset_30k.csv",
+  "artifacts": {
+    "spam_pipeline": "spam_pipeline.joblib",
+    "importance_pipeline": "importance_pipeline.joblib"
+  },
+  "spam_model": {
+    "type": "hybrid_strict",
+    "notes": "Uses raw CSV columns directly and performs internal feature engineering before TF-IDF plus metadata classification.",
+    "metrics": {
+      "accuracy": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 2862.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3000.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5862.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5862.0
+        }
+      },
+      "train_rows": 23446,
+      "test_rows": 5862
+    },
+    "recommended_threshold": 0.5
+  },
+  "importance_model": {
+    "type": "hybrid_proxy_target",
+    "notes": "Predicts low/medium/high importance on non-spam emails. Proxy labels are built from transparent business rules.",
+    "metrics": {
+      "accuracy": 0.8501,
+      "macro_f1": 0.8479,
+      "classification_report": {
+        "high": {
+          "precision": 0.8992,
+          "recall": 0.9177,
+          "f1-score": 0.9084,
+          "support": 972.0
+        },
+        "low": {
+          "precision": 0.8576,
+          "recall": 0.8862,
+          "f1-score": 0.8717,
+          "support": 958.0
+        },
+        "medium": {
+          "precision": 0.7864,
+          "recall": 0.7425,
+          "f1-score": 0.7638,
+          "support": 932.0
+        },
+        "accuracy": 0.8501,
+        "macro avg": {
+          "precision": 0.8477,
+          "recall": 0.8488,
+          "f1-score": 0.8479,
+          "support": 2862.0
+        },
+        "weighted avg": {
+          "precision": 0.8485,
+          "recall": 0.8501,
+          "f1-score": 0.849,
+          "support": 2862.0
+        }
+      },
+      "train_rows": 11446,
+      "test_rows": 2862
+    },
+    "proxy_thresholds": {
+      "q33": 3.4,
+      "q66": 4.9
+    },
+    "classes": [
+      "low",
+      "medium",
+      "high"
+    ]
+  }
+}

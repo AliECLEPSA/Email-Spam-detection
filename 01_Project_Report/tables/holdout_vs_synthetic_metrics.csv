@@ -1,0 +1,3 @@
+evaluation_set,accuracy,precision,recall,f1,specificity
+original_holdout,1.0,1.0,1.0,1.0,1.0
+synthetic_blind_stress_test,0.7917,0.7075,0.9944,0.8268,0.5889

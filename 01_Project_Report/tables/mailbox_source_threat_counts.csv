@@ -1,0 +1,7 @@
+source_label,effective_threat,count
+Generated demo set,legitimate,13
+Generated demo set,phishing,9
+Generated demo set,spam,14
+Held-out test set,legitimate,2862
+Held-out test set,phishing,2344
+Held-out test set,spam,656
